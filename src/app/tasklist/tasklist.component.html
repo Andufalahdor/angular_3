@@ -1,0 +1,14 @@
+<div class="main">
+    <h1>Plan your day!</h1>
+    <h2>User: {{user}} Count of Task {{taskList.length}}</h2>
+    <br>
+    <hr>
+    <div class="main-textbox">
+        <input class="textarea" [(ngModel)]="taskName">
+        <button class="button" (click)="addTask()">Add</button>
+    </div>
+    <hr>
+
+    <app-table [taskListCh]="taskList" (indexDel)="indexDelete($event)" (changeStat)="changeStatus($event)" (changeName)="changeName($event)"></app-table>
+
+</div>

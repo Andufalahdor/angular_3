@@ -1,0 +1,32 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 10px;
+    &-textbox {
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        .textarea {
+            width: 79%;
+            height: 30px;
+            border-radius: 3px;
+            border-width: 0px;
+        }
+        .button {
+            width: 20%;
+            margin-left: 1%;
+            height: 30px;
+            border-radius: 3px;
+            border-width: 0px;
+            color: white;
+            background-color: darkgreen;
+            cursor: pointer;
+        }
+    }
+}

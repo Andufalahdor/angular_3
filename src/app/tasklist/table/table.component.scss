@@ -1,0 +1,78 @@
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+        table {
+            width: 100%;
+            margin-top: 10px;
+            border-collapse: collapse;
+        }
+        
+        td {
+            text-align: center;
+        }
+        
+        tr {
+            border-top: 1px gray solid;
+            border-bottom: 1px gray solid;
+            height: 50px;
+        }
+        
+        tr:not(:first-child):hover {
+            background-color: gray;
+        }
+        
+        .edit {
+            height: 35px;
+            padding-left: 10px;
+            padding-right: 10px;
+            color: black;
+            background-color: orange;
+            border-width: 0px;
+            border-radius: 4px;
+            cursor: pointer;
+            &:disabled {
+                cursor: not-allowed;
+                background-color: rgb(255, 166, 0, 0.7);
+            }
+        }
+        
+        .delete {
+            height: 35px;
+            padding-left: 10px;
+            padding-right: 10px;
+            color: white;
+            background-color: red;
+            border-width: 0px;
+            border-radius: 4px;
+            cursor: pointer;
+            &:disabled {
+                cursor: not-allowed;
+                background-color: rgb(255, 0, 0, 0.7)
+            }
+        }
+        
+        .edit-box {
+            width: 100%;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        .editText {
+            height: 30px;
+        }
+        
+        .save {
+            border-width: 0px;
+            height: 30px;
+            padding-left: 10px;
+            padding-right: 10px;
+            border-radius: 3px;
+            color: white;
+            background-color: darkgreen;
+            cursor: pointer;
+        }
